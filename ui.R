@@ -1,5 +1,5 @@
 library(shiny)
-
+source("tabsetPanel2.R")
 shinyUI(fluidPage(
   uiOutput("tweak"),
 
@@ -9,6 +9,3 @@ shinyUI(fluidPage(
     tabPanel(title = "Tab3", "This is tab 3.")
   )
 ))
-
-
-
