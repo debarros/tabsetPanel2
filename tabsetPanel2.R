@@ -14,8 +14,8 @@ tabsetPanel2 = function (
     type <- match.arg(type)
     tabset <- buildTabset(tabs, paste0("nav nav-", type), NULL, id, selected)
     for (i in 1:length(tabcolors)){
-      tabset$navList$children[[i]]$children[[1]]$attribs$style = paste0("background-color: ",tabcolors[i],";")
-      tabset$content$children[[i]]$attribs$style = paste0("border: 4px solid", tabcolors[i],";")
+      tabset$navList$children[[1]][[i]]$children[[1]]$attribs$style = paste0("background-color: ",tabcolors[i],";")
+      tabset$content$children[[1]][[i]]$attribs$style = paste0("border: 4px solid", tabcolors[i],";")
     }
     
     tabset$navList$attribs$class = paste0(tabset$navList$attribs$class," nav-stacked col-xs-2")
